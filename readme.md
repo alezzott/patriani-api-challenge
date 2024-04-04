@@ -12,54 +12,54 @@ Antes de iniciar a API, é necessário configurar algumas variáveis de ambiente
 
 -   **Método**: `GET`
 -   **URL**: `/list`
--   **Descrição**: Retorna uma lista de todas as Empreendimentos cadastradas.
+-   **Descrição**: Retorna uma lista de todas os Empreendimentos cadastradas.
 -   **Resposta**: Um objeto JSON contendo um array de Empreendimentos.
 
 ### Obter Empreendimentos por ID
 
 -   **Método**: `GET`
 -   **URL**: `/:id`
--   **Descrição**: Retorna os detalhes de uma empresa específica, identificada pelo ID fornecido na URL.
+-   **Descrição**: Retorna os detalhes de uma Empreendimento específica, identificada pelo ID fornecido na URL.
 -   **Parâmetros**:
--   `id`: O ID da empresa a ser buscada.
--   **Resposta**: Um objeto JSON contendo os detalhes da empresa.
+-   `id`: O ID da Empreendimento a ser buscada.
+-   **Resposta**: Um objeto JSON contendo os detalhes da Empreendimento.
 
 ### Criar Empreendimento
 
 -   **Método**: `POST`
 -   **URL**: `/create`
--   **Descrição**: Cria uma nova empresa com os dados fornecidos no corpo da requisição.
+-   **Descrição**: Cria uma nova Empreendimento com os dados fornecidos no corpo da requisição.
 -   **Corpo da Requisição**:
--   `name`: Nome da empresa.
--   `status`: Status da empresa (RELEASE, SOON, IN_WORKS, READY_TO_LIVE).
--   `purpose`: Propósito da empresa (HOME, COMMERCIAL).
--   `ri_number`: Número de registro da empresa (opcional).
--   `address`: Objeto contendo detalhes do endereço da empresa.
--   **Resposta**: Um objeto JSON contendo os detalhes da empresa criada.
+-   `name`: Nome do Empreendimento.
+-   `status`: Status do Empreendimento (RELEASE, SOON, IN_WORKS, READY_TO_LIVE).
+-   `purpose`: Propósito do Empreendimento (HOME, COMMERCIAL).
+-   `ri_number`: Número de registro do Empreendimento (opcional).
+-   `address`: Objeto contendo detalhes do endereço do Empreendimento.
+-   **Resposta**: Um objeto JSON contendo os detalhes do Empreendimento criada.
 
-### Editar Empresa
+### Editar Empreendimento
 
 -   **Método**: `PATCH`
 -   **URL**: `/:id`
--   **Descrição**: Atualiza os dados de uma empresa específica, identificada pelo ID fornecido na URL.
+-   **Descrição**: Atualiza os dados de uma Empreendimento específica, identificada pelo ID fornecido na URL.
 -   **Parâmetros**:
--   `id`: O ID da empresa a ser atualizada.
+-   `id`: O ID da Empreendimento a ser atualizada.
 -   **Corpo da Requisição**:
--   `name`: Nome da empresa (opcional).
--   `status`: Status da empresa (opcional, RELEASE, SOON, IN_WORKS, READY_TO_LIVE).
--   `purpose`: Propósito da empresa (opcional, HOME, COMMERCIAL).
--   `ri_number`: Número de registro da empresa (opcional).
--   `address`: Objeto contendo detalhes do endereço da empresa (opcional).
--   **Resposta**: Um objeto JSON contendo os detalhes da empresa atualizada.
+-   `name`: Nome da Empreendimento (opcional).
+-   `status`: Status do Empreendimento (opcional, RELEASE, SOON, IN_WORKS, READY_TO_LIVE).
+-   `purpose`: Propósito do Empreendimento (opcional, HOME, COMMERCIAL).
+-   `ri_number`: Número de registro do Empreendimento (opcional).
+-   `address`: Objeto contendo detalhes do endereço do Empreendimento (opcional).
+-   **Resposta**: Um objeto JSON contendo os detalhes do Empreendimento atualizada.
 
-### Remover Empresa
+### Remover Empreendimento
 
 -   **Método**: `DELETE`
 -   **URL**: `/:id`
--   **Descrição**: Remove uma empresa específica, identificada pelo ID fornecido na URL.
+-   **Descrição**: Remove um Empreendimento específico, identificada pelo ID fornecido na URL.
 -   **Parâmetros**:
--   `id`: O ID da empresa a ser removida.
--   **Resposta**: Um objeto JSON vazio, indicando que a empresa foi removida com sucesso.
+-   `id`: O ID do Empreendimento a ser removida.
+-   **Resposta**: Um objeto JSON vazio, indicando que a Empreendimento foi removido com sucesso.
 
 ## Exemplos de Requisições
 
@@ -75,7 +75,7 @@ GET /list
 GET /1daf2cc4-40a4-4521-bfce-78803df72281
 ```
 
-### Criar empreendimento
+### Criar Empreendimento
 
 ```json
 POST /create
@@ -107,7 +107,7 @@ Content-Type: application/json
 }
 ```
 
-### Remover Empreedimento
+### Remover Empreendimento
 
 ```json
 DELETE /1daf2cc4-40a4-4521-bfce-78803df72281
